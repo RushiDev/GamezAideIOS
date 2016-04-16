@@ -34,16 +34,21 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ame-xx-b6C">
                                 <rect key="frame" x="20" y="516" width="280" height="40"/>
-                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="15"/>
                                 <state key="normal" title="Forgot password?">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qTU-Ye-vV4" kind="popoverPresentation" popoverAnchorView="Ame-xx-b6C" id="Rex-jc-nkd">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uz-nz-Vel">
                                 <rect key="frame" x="20" y="466" width="560" height="37"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
                                 <state key="normal" title="Authenticate">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
@@ -61,7 +66,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbT-yS-PGL">
                                 <rect key="frame" x="300" y="516" width="280" height="40"/>
-                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="15"/>
                                 <state key="normal" title="New here? Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-818" y="-2078"/>
+            <point key="canvasLocation" x="-855" y="-2690"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2kE-fq-muV">
@@ -159,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzw-3o-5HQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="-366"/>
+            <point key="canvasLocation" x="-94" y="-1124"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CNI-HG-14f">
@@ -184,7 +189,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axR-B6-QVt">
                                 <rect key="frame" x="303" y="508" width="277" height="40"/>
-                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="15"/>
                                 <state key="normal" title="Learn more">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
@@ -260,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whc-03-MW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-35" y="-2078"/>
+            <point key="canvasLocation" x="-775" y="-1124"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="2RZ-pU-SAC">
@@ -475,7 +480,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUW-yg-MxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42" y="2072"/>
+            <point key="canvasLocation" x="-1508" y="716"/>
         </scene>
         <!--My Teams-->
         <scene sceneID="J35-Kn-lT7">
@@ -845,11 +850,86 @@
             </objects>
             <point key="canvasLocation" x="1311" y="2405"/>
         </scene>
+        <!--Forgot Password-->
+        <scene sceneID="wWZ-Ns-Uyy">
+            <objects>
+                <viewController id="qTU-Ye-vV4" userLabel="Forgot Password" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOe-jf-XKl"/>
+                        <viewControllerLayoutGuide type="bottom" id="3dE-iY-XWu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P19-Dj-4iT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="937-rO-Yc8">
+                                <rect key="frame" x="20" y="402" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2y6-BT-j5D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-2u-Mtx">
+                                <rect key="frame" x="12" y="28" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="0Wq-6k-iCV"/>
+                                    <constraint firstAttribute="height" constant="34" id="46v-5S-0K2"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="d5L-I8-t4H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCT-qu-fbn">
+                                <rect key="frame" x="20" y="466" width="560" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="hmd-hn-AQc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                <state key="normal" title="Get New Password">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="BCT-qu-fbn" id="Kar-Az-NS1">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3dE-iY-XWu" firstAttribute="top" secondItem="BCT-qu-fbn" secondAttribute="bottom" constant="97" id="0Xp-gI-qLj"/>
+                            <constraint firstItem="937-rO-Yc8" firstAttribute="leading" secondItem="BCT-qu-fbn" secondAttribute="leading" id="Jc0-jS-aDx"/>
+                            <constraint firstItem="937-rO-Yc8" firstAttribute="trailing" secondItem="P19-Dj-4iT" secondAttribute="trailingMargin" id="QL5-k5-AlM"/>
+                            <constraint firstItem="gcA-2u-Mtx" firstAttribute="top" secondItem="fOe-jf-XKl" secondAttribute="bottom" constant="8" symbolic="YES" id="Qf9-nJ-iXh"/>
+                            <constraint firstItem="gcA-2u-Mtx" firstAttribute="leading" secondItem="P19-Dj-4iT" secondAttribute="leadingMargin" constant="-8" id="X6c-Mn-GXV"/>
+                            <constraint firstItem="BCT-qu-fbn" firstAttribute="top" secondItem="937-rO-Yc8" secondAttribute="bottom" constant="24" id="aLW-to-OD8"/>
+                            <constraint firstItem="937-rO-Yc8" firstAttribute="leading" secondItem="P19-Dj-4iT" secondAttribute="leadingMargin" id="hif-6W-yeV"/>
+                            <constraint firstItem="937-rO-Yc8" firstAttribute="trailing" secondItem="BCT-qu-fbn" secondAttribute="trailing" id="je1-0e-8Vx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome to GamezAide" id="EjT-6K-95y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOk-2b-EkF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="-2690"/>
+        </scene>
     </scenes>
     <resources>
         <image name="NavBar" width="32" height="32"/>
+        <image name="close" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mnG-Yq-Ks3"/>
+        <segue reference="cmk-0D-l58"/>
+        <segue reference="d5L-I8-t4H"/>
     </inferredMetricsTieBreakers>
 </document>

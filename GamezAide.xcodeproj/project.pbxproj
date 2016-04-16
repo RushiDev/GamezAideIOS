@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B01D2AF1CBC8F73007275A0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B01D2AE1CBC8F73007275A0 /* SWRevealViewController.m */; };
+		3B1B6F6A1CC00BF200180DCD /* MyTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B6F691CC00BF200180DCD /* MyTeamsViewController.swift */; };
+		3B1B6F6C1CC00CA300180DCD /* TeamViewControllerBySport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B6F6B1CC00CA300180DCD /* TeamViewControllerBySport.swift */; };
+		3B208EC11CBFC86300BF1919 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B208EC01CBFC86300BF1919 /* CollectionViewCell.swift */; };
+		3B36EB2F1CC05F0F0006B873 /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36EB2E1CC05F0F0006B873 /* AddTeamViewController.swift */; };
+		3B36EB311CC062EA0006B873 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36EB301CC062EA0006B873 /* AddPlayerViewController.swift */; };
+		3B36EB331CC0659A0006B873 /* MyGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36EB321CC0659A0006B873 /* MyGamesViewController.swift */; };
+		3B36EB351CC06C170006B873 /* ScheduleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36EB341CC06C170006B873 /* ScheduleGameViewController.swift */; };
 		3BBFCCCD1CBC71BE00B23805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFCCCC1CBC71BE00B23805 /* AppDelegate.swift */; };
 		3BBFCCCF1CBC71BE00B23805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFCCCE1CBC71BE00B23805 /* ViewController.swift */; };
 		3BBFCCD21CBC71BE00B23805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFCCD01CBC71BE00B23805 /* Main.storyboard */; };
@@ -34,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B01D2AC1CBC8F73007275A0 /* GamezAide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamezAide-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B01D2AD1CBC8F73007275A0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		3B01D2AE1CBC8F73007275A0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		3B1B6F691CC00BF200180DCD /* MyTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTeamsViewController.swift; sourceTree = "<group>"; };
+		3B1B6F6B1CC00CA300180DCD /* TeamViewControllerBySport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewControllerBySport.swift; sourceTree = "<group>"; };
+		3B208EC01CBFC86300BF1919 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3B36EB2E1CC05F0F0006B873 /* AddTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
+		3B36EB301CC062EA0006B873 /* AddPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
+		3B36EB321CC0659A0006B873 /* MyGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGamesViewController.swift; sourceTree = "<group>"; };
+		3B36EB341CC06C170006B873 /* ScheduleGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleGameViewController.swift; sourceTree = "<group>"; };
 		3BBFCCC91CBC71BE00B23805 /* GamezAide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamezAide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBFCCCC1CBC71BE00B23805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BBFCCCE1CBC71BE00B23805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B01D2AB1CBC8F3D007275A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B01D2AD1CBC8F73007275A0 /* SWRevealViewController.h */,
+				3B01D2AE1CBC8F73007275A0 /* SWRevealViewController.m */,
+				3B01D2AC1CBC8F73007275A0 /* GamezAide-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3BBFCCC01CBC71BE00B23805 = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +128,17 @@
 				3BBFCCCC1CBC71BE00B23805 /* AppDelegate.swift */,
 				3BBFCCCE1CBC71BE00B23805 /* ViewController.swift */,
 				3BBFCCD01CBC71BE00B23805 /* Main.storyboard */,
+				3B208EC01CBFC86300BF1919 /* CollectionViewCell.swift */,
 				3BBFCCD31CBC71BE00B23805 /* Assets.xcassets */,
 				3BBFCCD51CBC71BE00B23805 /* LaunchScreen.storyboard */,
 				3BBFCCD81CBC71BE00B23805 /* Info.plist */,
+				3B01D2AB1CBC8F3D007275A0 /* Supporting Files */,
+				3B1B6F691CC00BF200180DCD /* MyTeamsViewController.swift */,
+				3B36EB2E1CC05F0F0006B873 /* AddTeamViewController.swift */,
+				3B1B6F6B1CC00CA300180DCD /* TeamViewControllerBySport.swift */,
+				3B36EB301CC062EA0006B873 /* AddPlayerViewController.swift */,
+				3B36EB321CC0659A0006B873 /* MyGamesViewController.swift */,
+				3B36EB341CC06C170006B873 /* ScheduleGameViewController.swift */,
 			);
 			path = GamezAide;
 			sourceTree = "<group>";
@@ -256,8 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B36EB351CC06C170006B873 /* ScheduleGameViewController.swift in Sources */,
+				3B208EC11CBFC86300BF1919 /* CollectionViewCell.swift in Sources */,
+				3B1B6F6C1CC00CA300180DCD /* TeamViewControllerBySport.swift in Sources */,
+				3B36EB2F1CC05F0F0006B873 /* AddTeamViewController.swift in Sources */,
 				3BBFCCCF1CBC71BE00B23805 /* ViewController.swift in Sources */,
 				3BBFCCCD1CBC71BE00B23805 /* AppDelegate.swift in Sources */,
+				3B36EB311CC062EA0006B873 /* AddPlayerViewController.swift in Sources */,
+				3B01D2AF1CBC8F73007275A0 /* SWRevealViewController.m in Sources */,
+				3B36EB331CC0659A0006B873 /* MyGamesViewController.swift in Sources */,
+				3B1B6F6A1CC00BF200180DCD /* MyTeamsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GamezAide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.datasoft.GamezAide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GamezAide/GamezAide-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +459,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GamezAide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.datasoft.GamezAide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GamezAide/GamezAide-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +533,7 @@
 				3BBFCCF31CBC71BE00B23805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BBFCCF41CBC71BE00B23805 /* Build configuration list for PBXNativeTarget "GamezAideTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +542,7 @@
 				3BBFCCF61CBC71BE00B23805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BBFCCF71CBC71BE00B23805 /* Build configuration list for PBXNativeTarget "GamezAideUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +551,7 @@
 				3BBFCCF91CBC71BE00B23805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

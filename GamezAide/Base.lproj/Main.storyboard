@@ -634,53 +634,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A36-Zh-tkw">
-                                <rect key="frame" x="100" y="208" width="400" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team Name" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="0Ka-HQ-5wp">
+                                <rect key="frame" x="20" y="211" width="560" height="30"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l34-Y9-qza">
-                                <rect key="frame" x="100" y="179" width="400" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a sport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXs-nX-DaS">
-                                <rect key="frame" x="100" y="276" width="400" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Je-Xv-16h">
-                                <rect key="frame" x="123" y="550" width="355" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.089913264079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="355" id="hZe-Ce-zRX"/>
-                                </constraints>
-                                <state key="normal" title="Save Team">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a Sport" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-pZ-sz1">
+                                <rect key="frame" x="20" y="272" width="560" height="30"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v8-az-h6T">
+                                <rect key="frame" x="20" y="543" width="560" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-NP-40I">
-                                <rect key="frame" x="100" y="305" width="400" height="216"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-NP-40I">
+                                <rect key="frame" x="20" y="296" width="560" height="137"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="l34-Y9-qza" firstAttribute="leading" secondItem="ijW-ai-1to" secondAttribute="leadingMargin" constant="80" id="7VU-5J-7GI"/>
-                            <constraint firstItem="2b3-NP-40I" firstAttribute="top" secondItem="tXs-nX-DaS" secondAttribute="bottom" constant="8" symbolic="YES" id="7mi-Pw-cEW"/>
-                            <constraint firstItem="A36-Zh-tkw" firstAttribute="trailing" secondItem="tXs-nX-DaS" secondAttribute="trailing" id="Axa-hQ-E8J"/>
-                            <constraint firstItem="l34-Y9-qza" firstAttribute="leading" secondItem="A36-Zh-tkw" secondAttribute="leading" id="ClB-5m-QnU"/>
-                            <constraint firstItem="tXs-nX-DaS" firstAttribute="trailing" secondItem="2b3-NP-40I" secondAttribute="trailing" id="Fc2-N5-1Zm"/>
-                            <constraint firstItem="l34-Y9-qza" firstAttribute="trailing" secondItem="A36-Zh-tkw" secondAttribute="trailing" id="IRg-BY-7dS"/>
-                            <constraint firstAttribute="bottom" secondItem="4Je-Xv-16h" secondAttribute="bottom" constant="20" symbolic="YES" id="ZWU-wF-IVy"/>
-                            <constraint firstItem="2b3-NP-40I" firstAttribute="centerX" secondItem="4Je-Xv-16h" secondAttribute="centerX" id="aPy-pp-EzK"/>
-                            <constraint firstItem="A36-Zh-tkw" firstAttribute="top" secondItem="l34-Y9-qza" secondAttribute="bottom" constant="8" symbolic="YES" id="gev-7L-X6r"/>
-                            <constraint firstItem="A36-Zh-tkw" firstAttribute="leading" secondItem="tXs-nX-DaS" secondAttribute="leading" id="pOE-w9-fpc"/>
-                            <constraint firstItem="tXs-nX-DaS" firstAttribute="leading" secondItem="2b3-NP-40I" secondAttribute="leading" id="r3s-YI-rhU"/>
-                            <constraint firstItem="l34-Y9-qza" firstAttribute="centerX" secondItem="ijW-ai-1to" secondAttribute="centerX" id="tai-jT-PpU"/>
-                            <constraint firstItem="tXs-nX-DaS" firstAttribute="top" secondItem="A36-Zh-tkw" secondAttribute="bottom" constant="38" id="wkR-M0-gbr"/>
-                            <constraint firstItem="4Je-Xv-16h" firstAttribute="top" secondItem="2b3-NP-40I" secondAttribute="bottom" constant="29" id="y4k-GF-BC6"/>
+                            <constraint firstItem="Etu-pZ-sz1" firstAttribute="trailing" secondItem="2b3-NP-40I" secondAttribute="trailing" id="6ng-WT-eif"/>
+                            <constraint firstItem="0Ka-HQ-5wp" firstAttribute="trailing" secondItem="Etu-pZ-sz1" secondAttribute="trailing" id="D08-0T-p9f"/>
+                            <constraint firstAttribute="bottom" secondItem="4v8-az-h6T" secondAttribute="bottom" constant="20" symbolic="YES" id="GtO-Yv-CuO"/>
+                            <constraint firstItem="Etu-pZ-sz1" firstAttribute="top" secondItem="0Ka-HQ-5wp" secondAttribute="bottom" constant="31" id="Ne8-n3-yFa"/>
+                            <constraint firstItem="Etu-pZ-sz1" firstAttribute="leading" secondItem="2b3-NP-40I" secondAttribute="leading" id="PaG-Ve-YrC"/>
+                            <constraint firstItem="0Ka-HQ-5wp" firstAttribute="leading" secondItem="ijW-ai-1to" secondAttribute="leadingMargin" id="Pxy-Ov-l9a"/>
+                            <constraint firstItem="2b3-NP-40I" firstAttribute="top" secondItem="0Ka-HQ-5wp" secondAttribute="bottom" constant="55" id="cdn-ow-LaU"/>
+                            <constraint firstItem="0Ka-HQ-5wp" firstAttribute="leading" secondItem="Etu-pZ-sz1" secondAttribute="leading" id="ftt-iU-KIk"/>
+                            <constraint firstItem="2b3-NP-40I" firstAttribute="leading" secondItem="4v8-az-h6T" secondAttribute="leading" id="qQ3-P9-PK5"/>
+                            <constraint firstItem="0Ka-HQ-5wp" firstAttribute="trailing" secondItem="ijW-ai-1to" secondAttribute="trailingMargin" id="uX1-MG-PEi"/>
+                            <constraint firstItem="2b3-NP-40I" firstAttribute="trailing" secondItem="4v8-az-h6T" secondAttribute="trailing" id="vkl-JO-Uhp"/>
+                            <constraint firstItem="0Ka-HQ-5wp" firstAttribute="top" secondItem="zT5-rW-SSa" secondAttribute="bottom" constant="147" id="yyf-RB-jrq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Team" id="qRx-ZS-0F1">
@@ -688,6 +684,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="navButton" destination="m8I-m2-oan" id="Qci-fV-0Ki"/>
+                        <outlet property="sportPicker" destination="2b3-NP-40I" id="lH6-Kq-jxA"/>
+                        <outlet property="sportTextField" destination="Etu-pZ-sz1" id="hZm-JT-GwE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiG-Ly-Xu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -929,7 +927,7 @@
         <image name="close" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cmk-0D-l58"/>
         <segue reference="d5L-I8-t4H"/>
+        <segue reference="mnG-Yq-Ks3"/>
     </inferredMetricsTieBreakers>
 </document>

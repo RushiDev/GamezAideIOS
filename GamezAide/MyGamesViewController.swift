@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MyGamesViewController: UIViewController {
+class MyGamesViewController: UITableViewController {
     
     @IBOutlet var navButton: UIBarButtonItem!
     
@@ -21,6 +21,10 @@ class MyGamesViewController: UIViewController {
             navButton?.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+
+
     }
     
     override func didReceiveMemoryWarning() {

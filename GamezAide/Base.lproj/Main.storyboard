@@ -733,7 +733,7 @@
                                 <rect key="frame" x="0.0" y="329" width="600" height="216"/>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Player" id="tXU-xe-a6B">
                         <barButtonItem key="leftBarButtonItem" image="NavBar" id="8W1-6m-llR"/>
@@ -764,30 +764,6 @@
             </objects>
             <point key="canvasLocation" x="1311" y="1023"/>
         </scene>
-        <!--My Games-->
-        <scene sceneID="dlx-kI-7kJ">
-            <objects>
-                <viewController id="glu-11-7hd" customClass="MyGamesViewController" customModule="GamezAide" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mzC-sm-as2"/>
-                        <viewControllerLayoutGuide type="bottom" id="J2m-ta-AmZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Z1X-Lt-wxj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="My Games" id="csL-r5-CrZ">
-                        <barButtonItem key="leftBarButtonItem" image="NavBar" id="vmO-a3-mdW"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="navButton" destination="vmO-a3-mdW" id="pOW-mU-cuj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wAj-4P-Pgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1967" y="1705"/>
-        </scene>
         <!--Schedule Game-->
         <scene sceneID="xie-es-hSe">
             <objects>
@@ -812,6 +788,277 @@
             </objects>
             <point key="canvasLocation" x="1967" y="2405"/>
         </scene>
+        <!--My Games-->
+        <scene sceneID="Ulc-sy-ZsQ">
+            <objects>
+                <tableViewController id="znZ-VE-mrf" customClass="MyGamesViewController" customModule="GamezAide" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hj6-xU-BPM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="oh8-aX-8Ko">
+                                <cells>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="NwZ-1n-d4K">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NwZ-1n-d4K" id="fzw-OH-qbt">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-ic-q7J">
+                                                    <rect key="frame" x="550" y="8" width="42" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="xvm-lg-5yr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvn-mA-TXf">
+                                                    <rect key="frame" x="0.0" y="5" width="16" height="39"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="nLv-Fe-iJ5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q7-c7-9uV">
+                                                    <rect key="frame" x="27" y="0.0" width="573" height="49"/>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="16"/>
+                                                    <state key="normal" title="Completed">
+                                                        <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tvn-mA-TXf" firstAttribute="leading" secondItem="fzw-OH-qbt" secondAttribute="leading" id="9SC-fK-TtZ"/>
+                                                <constraint firstItem="Tvn-mA-TXf" firstAttribute="centerY" secondItem="fzw-OH-qbt" secondAttribute="centerY" id="C0F-5h-wHp"/>
+                                                <constraint firstItem="Tvn-mA-TXf" firstAttribute="centerY" secondItem="kbU-ic-q7J" secondAttribute="centerY" id="CW8-KE-bfU"/>
+                                                <constraint firstAttribute="trailing" secondItem="7q7-c7-9uV" secondAttribute="trailing" id="G8t-Si-hVc"/>
+                                                <constraint firstItem="7q7-c7-9uV" firstAttribute="centerY" secondItem="kbU-ic-q7J" secondAttribute="centerY" id="GZw-NT-2wK"/>
+                                                <constraint firstItem="7q7-c7-9uV" firstAttribute="top" secondItem="fzw-OH-qbt" secondAttribute="top" id="UQp-b7-47j"/>
+                                                <constraint firstItem="kbU-ic-q7J" firstAttribute="trailing" secondItem="fzw-OH-qbt" secondAttribute="trailingMargin" id="VB8-c9-iM5"/>
+                                                <constraint firstItem="kbU-ic-q7J" firstAttribute="top" secondItem="fzw-OH-qbt" secondAttribute="topMargin" id="aEZ-CD-9Xy"/>
+                                                <constraint firstItem="Tvn-mA-TXf" firstAttribute="top" secondItem="fzw-OH-qbt" secondAttribute="topMargin" constant="-3" id="sPu-2u-0hW"/>
+                                                <constraint firstItem="7q7-c7-9uV" firstAttribute="leading" secondItem="Tvn-mA-TXf" secondAttribute="trailing" constant="11" id="ynz-Ub-vLy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="oYj-Rm-kpE">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYj-Rm-kpE" id="Ovg-Mc-e72">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWX-Sb-zhp">
+                                                    <rect key="frame" x="550" y="8" width="42" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="jnb-gQ-DZ7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl5-3V-Fgw">
+                                                    <rect key="frame" x="0.0" y="5" width="16" height="39"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="5Th-nj-2dm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUD-K1-tyg">
+                                                    <rect key="frame" x="27" y="0.0" width="573" height="49"/>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="16"/>
+                                                    <state key="normal" title="Scheduled Equal Opportunities">
+                                                        <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Jl5-3V-Fgw" firstAttribute="top" secondItem="Ovg-Mc-e72" secondAttribute="topMargin" constant="-3" id="JZu-Cd-KpZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="rUD-K1-tyg" secondAttribute="trailing" id="YcR-4e-fpb"/>
+                                                <constraint firstItem="dWX-Sb-zhp" firstAttribute="top" secondItem="Ovg-Mc-e72" secondAttribute="topMargin" id="eWK-8R-WuK"/>
+                                                <constraint firstItem="rUD-K1-tyg" firstAttribute="leading" secondItem="Jl5-3V-Fgw" secondAttribute="trailing" constant="11" id="hKO-e9-lft"/>
+                                                <constraint firstItem="Jl5-3V-Fgw" firstAttribute="leading" secondItem="Ovg-Mc-e72" secondAttribute="leading" id="nbW-yH-Pkm"/>
+                                                <constraint firstItem="dWX-Sb-zhp" firstAttribute="trailing" secondItem="Ovg-Mc-e72" secondAttribute="trailingMargin" id="q2R-Xv-0cG"/>
+                                                <constraint firstItem="rUD-K1-tyg" firstAttribute="top" secondItem="Ovg-Mc-e72" secondAttribute="top" id="rqa-L9-Xhh"/>
+                                                <constraint firstItem="rUD-K1-tyg" firstAttribute="centerY" secondItem="dWX-Sb-zhp" secondAttribute="centerY" id="s3a-e3-JK5"/>
+                                                <constraint firstItem="Jl5-3V-Fgw" firstAttribute="centerY" secondItem="Ovg-Mc-e72" secondAttribute="centerY" id="trC-Ul-4Hz"/>
+                                                <constraint firstItem="Jl5-3V-Fgw" firstAttribute="centerY" secondItem="dWX-Sb-zhp" secondAttribute="centerY" id="vkS-4c-haI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="ETp-hx-jUS">
+                                        <rect key="frame" x="0.0" y="164" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ETp-hx-jUS" id="h49-VS-ZNA">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zV-q0-Rhn">
+                                                    <rect key="frame" x="550" y="8" width="42" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="PSb-fk-CUG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b47-Kj-CSI">
+                                                    <rect key="frame" x="0.0" y="5" width="16" height="39"/>
+                                                    <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="pcd-8c-jv0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pr-Qj-0Sv">
+                                                    <rect key="frame" x="27" y="0.0" width="573" height="49"/>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="16"/>
+                                                    <state key="normal" title="Scheduled Equal Opp Win">
+                                                        <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b47-Kj-CSI" firstAttribute="centerY" secondItem="7zV-q0-Rhn" secondAttribute="centerY" id="0W5-ZS-jNf"/>
+                                                <constraint firstItem="8pr-Qj-0Sv" firstAttribute="leading" secondItem="b47-Kj-CSI" secondAttribute="trailing" constant="11" id="1YS-C1-BAG"/>
+                                                <constraint firstItem="8pr-Qj-0Sv" firstAttribute="centerY" secondItem="7zV-q0-Rhn" secondAttribute="centerY" id="3kk-mB-DiM"/>
+                                                <constraint firstItem="b47-Kj-CSI" firstAttribute="leading" secondItem="h49-VS-ZNA" secondAttribute="leading" id="8En-wN-Ccp"/>
+                                                <constraint firstAttribute="trailing" secondItem="8pr-Qj-0Sv" secondAttribute="trailing" id="RX6-lL-a0W"/>
+                                                <constraint firstItem="8pr-Qj-0Sv" firstAttribute="top" secondItem="h49-VS-ZNA" secondAttribute="top" id="nvd-Bx-WTB"/>
+                                                <constraint firstItem="b47-Kj-CSI" firstAttribute="centerY" secondItem="h49-VS-ZNA" secondAttribute="centerY" id="rV2-7k-6YJ"/>
+                                                <constraint firstItem="7zV-q0-Rhn" firstAttribute="trailing" secondItem="h49-VS-ZNA" secondAttribute="trailingMargin" id="rpD-0a-fhQ"/>
+                                                <constraint firstItem="7zV-q0-Rhn" firstAttribute="top" secondItem="h49-VS-ZNA" secondAttribute="topMargin" id="sPC-0k-NxT"/>
+                                                <constraint firstItem="b47-Kj-CSI" firstAttribute="top" secondItem="h49-VS-ZNA" secondAttribute="topMargin" constant="-3" id="uXv-UO-gKw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="JLT-Gs-Kol">
+                                        <rect key="frame" x="0.0" y="214" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JLT-Gs-Kol" id="ihR-Hg-EzO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXP-p7-Zye">
+                                                    <rect key="frame" x="550" y="8" width="42" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="89d-Z1-oJn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-Ho-iIS">
+                                                    <rect key="frame" x="0.0" y="5" width="16" height="39"/>
+                                                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="YQ4-d2-ys2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHa-92-1vd">
+                                                    <rect key="frame" x="27" y="0.0" width="573" height="49"/>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="16"/>
+                                                    <state key="normal" title="Scheduled Competitive">
+                                                        <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bgB-Ho-iIS" firstAttribute="leading" secondItem="ihR-Hg-EzO" secondAttribute="leading" id="2QE-Nl-h5B"/>
+                                                <constraint firstAttribute="trailing" secondItem="kHa-92-1vd" secondAttribute="trailing" id="2UA-u6-feC"/>
+                                                <constraint firstItem="OXP-p7-Zye" firstAttribute="top" secondItem="ihR-Hg-EzO" secondAttribute="topMargin" id="4PD-Y3-GkH"/>
+                                                <constraint firstItem="bgB-Ho-iIS" firstAttribute="top" secondItem="ihR-Hg-EzO" secondAttribute="topMargin" constant="-3" id="AEz-Yc-clk"/>
+                                                <constraint firstItem="bgB-Ho-iIS" firstAttribute="centerY" secondItem="OXP-p7-Zye" secondAttribute="centerY" id="Mmw-Uk-sTs"/>
+                                                <constraint firstItem="kHa-92-1vd" firstAttribute="leading" secondItem="bgB-Ho-iIS" secondAttribute="trailing" constant="11" id="RAW-Yf-dQc"/>
+                                                <constraint firstItem="OXP-p7-Zye" firstAttribute="trailing" secondItem="ihR-Hg-EzO" secondAttribute="trailingMargin" id="Zsw-bd-biH"/>
+                                                <constraint firstItem="bgB-Ho-iIS" firstAttribute="centerY" secondItem="ihR-Hg-EzO" secondAttribute="centerY" id="gOW-eF-Ayk"/>
+                                                <constraint firstItem="kHa-92-1vd" firstAttribute="top" secondItem="ihR-Hg-EzO" secondAttribute="top" id="jrl-em-VD4"/>
+                                                <constraint firstItem="kHa-92-1vd" firstAttribute="centerY" secondItem="OXP-p7-Zye" secondAttribute="centerY" id="xs3-WM-klp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="SAz-hc-f2j">
+                                        <rect key="frame" x="0.0" y="264" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SAz-hc-f2j" id="wpp-TI-D4u">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPW-Ba-7zG">
+                                                    <rect key="frame" x="550" y="8" width="42" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="eEl-9F-l5n"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXz-EH-FM6">
+                                                    <rect key="frame" x="0.0" y="5" width="16" height="39"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="52j-M1-mY4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H60-BR-DCr">
+                                                    <rect key="frame" x="27" y="0.0" width="573" height="49"/>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="16"/>
+                                                    <state key="normal" title="Scheduled a New Game">
+                                                        <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qPW-Ba-7zG" firstAttribute="top" secondItem="wpp-TI-D4u" secondAttribute="topMargin" id="DxM-DB-Wij"/>
+                                                <constraint firstItem="qPW-Ba-7zG" firstAttribute="trailing" secondItem="wpp-TI-D4u" secondAttribute="trailingMargin" id="EXk-wW-RFa"/>
+                                                <constraint firstAttribute="trailing" secondItem="H60-BR-DCr" secondAttribute="trailing" id="JLK-YU-Qkl"/>
+                                                <constraint firstItem="xXz-EH-FM6" firstAttribute="leading" secondItem="wpp-TI-D4u" secondAttribute="leading" id="Oq4-yu-fU5"/>
+                                                <constraint firstItem="H60-BR-DCr" firstAttribute="centerY" secondItem="qPW-Ba-7zG" secondAttribute="centerY" id="Tkp-Dq-H9U"/>
+                                                <constraint firstItem="xXz-EH-FM6" firstAttribute="centerY" secondItem="wpp-TI-D4u" secondAttribute="centerY" id="azj-Dr-6o6"/>
+                                                <constraint firstItem="H60-BR-DCr" firstAttribute="leading" secondItem="xXz-EH-FM6" secondAttribute="trailing" constant="11" id="bG6-29-l0J"/>
+                                                <constraint firstItem="xXz-EH-FM6" firstAttribute="centerY" secondItem="qPW-Ba-7zG" secondAttribute="centerY" id="fDl-br-DIA"/>
+                                                <constraint firstItem="xXz-EH-FM6" firstAttribute="top" secondItem="wpp-TI-D4u" secondAttribute="topMargin" constant="-3" id="tZk-Km-C0v"/>
+                                                <constraint firstItem="H60-BR-DCr" firstAttribute="top" secondItem="wpp-TI-D4u" secondAttribute="top" id="vq0-jR-FOD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="znZ-VE-mrf" id="iie-cz-D0v"/>
+                            <outlet property="delegate" destination="znZ-VE-mrf" id="TZJ-ck-IiW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Games" id="xip-oQ-HCF">
+                        <barButtonItem key="leftBarButtonItem" image="NavBar" id="xCV-f1-GkU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navButton" destination="xCV-f1-GkU" id="jsX-y6-Dby"/>
+                        <outlet property="tableView" destination="Hj6-xU-BPM" id="soS-aZ-bmM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oz2-5o-B0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="1705"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="NDP-La-fIa">
             <objects>
@@ -823,7 +1070,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="glu-11-7hd" kind="relationship" relationship="rootViewController" id="buB-Nh-j1a"/>
+                        <segue destination="znZ-VE-mrf" kind="relationship" relationship="rootViewController" id="VdK-8Q-A0q"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOU-yk-uJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -927,7 +1174,7 @@
         <image name="close" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d5L-I8-t4H"/>
-        <segue reference="mnG-Yq-Ks3"/>
+        <segue reference="cmk-0D-l58"/>
+        <segue reference="0vc-6B-EGS"/>
     </inferredMetricsTieBreakers>
 </document>
